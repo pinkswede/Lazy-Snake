@@ -1,0 +1,29 @@
+Assignment 1, Lazy Snake
+
+https://github.com/pinkswede/Lazy-Snake
+
+Name: Ciaran Lynch
+
+About:
+
+Lazy snake is a recreation of the nokia game 'snake' which involves a snake eating food,
+after which its tail will increase in length. Once the snake reaches a certan length, the player
+will win (5000 points achieved). If the player collides with either the walls, or with the snakes
+tail, they will lose.
+
+Understanding Code:
+
+The code was organised into 7 different parts which perform certain types of funtions.
+
+Main.cpp: initializes the title screen, handles game screens and runs game loop
+Resources.cpp: Loads and Unloads both sound and textures
+GameLevel.cpp: controls many aspects of the game logic
+Resources.h: contains structures for the textures and sound
+GameLevel.h: storage of variables, initialization of variables
+Entity.h: decleration of game entities, common features grouped
+Game.h: contains screens declerations and handles game level
+myMath.h: Taken from Galba for math-related purposes
+
+Files:
+
+Resources: contains both the textures and sounds implemented in game
