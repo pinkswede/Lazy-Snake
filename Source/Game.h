@@ -1,5 +1,6 @@
 #include"GameLevel.h"
 
+// declaration of the different screens
 enum struct GameScreen
 {
 	TITLE = 0,
@@ -8,6 +9,7 @@ enum struct GameScreen
 	GAMEOVER,
 };
 
+//game manager which handles the game
 struct GameManager
 {
 	GameScreen CurrentScreen{};

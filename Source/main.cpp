@@ -14,9 +14,11 @@ int main(void)
 
     GameManager game;
 
-    ResourceManager::LoadResources();
+    ResourceManager::LoadResources();       // I load all the resources here before game starts
 
     game.CurrentScreen = GameScreen::TITLE;
+
+    // I spawn the snake and the food before the game window starts because i want snake and food to be there and food will update as it gets eaten
     game.levelref.spawnsnake();
     game.levelref.spawnfood();
     // Main game loop
@@ -52,6 +54,7 @@ int main(void)
 
             EndDrawing();
 
+            // these functions checks different condition happens in game and change screens 
             if(game.levelref.score == 8000)
             {
                 game.CurrentScreen = GameScreen::WINSCREEN;
@@ -112,6 +115,7 @@ int main(void)
        
     }
 
+    // I unload everything here So I don't leak memory
     ResourceManager::UnloadResources();
 
     CloseAudioDevice();

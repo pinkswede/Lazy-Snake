@@ -1,6 +1,7 @@
 #include"raylib.h"
 #include"myMath.h"
 
+// declared the entity  class here
 class Entity
 {
 public:

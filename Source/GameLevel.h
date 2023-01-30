@@ -2,7 +2,7 @@
 #include <vector>
 #include "Resources.h"
 
-
+// storing all main variables and functions
 class Level
 {
 	public:

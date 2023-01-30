@@ -1,5 +1,6 @@
 #include "raylib.h"
 
+// organising sounds
 struct Sounds
 {
 	Sound EatFood;
@@ -7,6 +8,7 @@ struct Sounds
 	Sound Win;
 };
 
+// organising textures
 struct Textures
 {
 	Texture2D  SnakeHeadRight;
@@ -18,6 +20,7 @@ struct Textures
 	Texture2D SnakeBody;
 };
 
+// Resource manager
 struct ResourceManager
 {
 	static Textures textures;

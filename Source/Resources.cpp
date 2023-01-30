@@ -1,8 +1,10 @@
 #include "Resources.h"
 
+// I called these because i made them static
 Textures ResourceManager::textures;
 Sounds ResourceManager::sounds;
 
+// Loading textures and sounds
 void ResourceManager::LoadResources()
 {
 	textures.SnakeHeadUp = LoadTexture("./Resources/Textures/snakeheadup.png");
@@ -17,6 +19,7 @@ void ResourceManager::LoadResources()
 	sounds.Win = LoadSound("./Resources/Sounds/Win.wav");
 }
 
+// unloading textures and sounds
 void ResourceManager::UnloadResources()
 {
 	UnloadTexture(textures.SnakeHeadUp);
