@@ -1,1 +1,1 @@
-Welcome to my recreation of the classic Snake game, built with the simplicity and elegance of the Raylib library. This game is a tribute to the timeless mobile game that many of us played on our first cell phones. Dive into nostalgia with a modern twist!
+Welcome to my recreation of the classic Snake game, built with the Raylib library. This is a tribute to one of the first and most the timeless mobile games
